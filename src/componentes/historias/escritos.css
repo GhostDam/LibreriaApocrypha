@@ -1,0 +1,28 @@
+.escena{
+    display: flex;
+    background-color: burlywood;
+    color: rgba(222, 184, 135, 0.87);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.escena p{
+    margin-bottom: 15px;
+    line-height: 200%;
+}
+.historia{
+    border: 10px double rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex: 1;
+}
+/* imagenes */
+.imagen{
+    flex-basis: 30%;
+    flex-shrink: 1;
+    background-color: black;
+}
+.historia img{
+    max-width: 50%;
+}
+.imagen img{
+    max-width: 100%;
+}

@@ -1,0 +1,72 @@
+header{
+    position: fixed;
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+.header .h1{
+    line-height: 10vh;
+    color: white;
+}
+.header-fix{
+    margin-top: 10vh;
+}
+/* hamburguesa */
+.hamburguer{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.ham_line{
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: white;
+  transition: .3s;   
+  border-radius: 5px;
+}
+.hamburguer:hover .ham_line:nth-of-type(1){
+    transform: rotate(45deg) translate(0, 10px);
+}
+.hamburguer:hover .ham_line:nth-of-type(2){
+    opacity: 0;
+}
+.hamburguer:hover .ham_line:nth-of-type(3){
+    transform: rotate(-45deg) translate(0, -10px);
+}
+/* hamburguesa */
+.header_content{
+    position: relative;
+    line-height: 10vh;
+    margin-left: auto;
+}
+
+/* contenido */
+.header a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 720px){
+    .hamburguer {
+        display: block;
+    }
+    .header_content a{
+        display: block;
+    }
+    .header_content{
+        width: 50vw;
+        height: 100vh;
+        background-color: black;
+        top: 9vh;
+        right: -100vw;
+        transition: .3s;
+    }
+    .hamburguer:hover + .header_content{
+        right: 0;
+    }
+}
